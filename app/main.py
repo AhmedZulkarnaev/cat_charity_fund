@@ -1,8 +1,7 @@
-from fastapi import FastAPI
-
 from api.routers import main_router
 from core.config import settings
 from core.init_db import create_first_superuser
+from fastapi import FastAPI
 
 app = FastAPI(title=settings.app_title)
 
